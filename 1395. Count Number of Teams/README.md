@@ -10,7 +10,7 @@ Our intuition leads us to devise a naive (brute force) solution, i.e., using nes
 
 <p align="center"> PSEUDOCODE </p>
 
-$\mathrm{rating[1…n]\ :=\ ratings\ of\ all\ the\ soldiers}$<br>
+$\mathrm{rating[1…n]\ :=\ rating\ for\ each\ soldier}$<br>
 $\mathrm{ct\ :=\ counter,\ denotes\ number\ of\ satisfying\ combinations}$
 
 $$
