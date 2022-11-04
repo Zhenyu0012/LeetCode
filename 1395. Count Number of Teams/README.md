@@ -4,7 +4,7 @@
 https://leetcode.com/problems/count-number-of-teams/
 
 ## Naive Solution (Brute force):
-Our intuition leads us to devise a naive (brute force) solution, i.e., using nested loops to find all the possible increasing or decreasing subsequences with length 3. Our goal is straightforward - checking all the possible combinations and counting all the satisfying combinations.
+Our intuition leads us to devise a naive (brute force) solution, i.e., using nested loops to find all possible increasing or decreasing subsequences with length 3. Our goal is straightforward - checking all possible combinations and counting all satisfying combinations.
 
 ---
 
