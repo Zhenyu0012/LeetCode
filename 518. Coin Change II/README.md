@@ -26,7 +26,7 @@ $$
 
 <p align="center"> IMPLEMENTATION </p>
 
-In my solution, I use list `choices` to trace denominations, and I will add this list to set `uchoices` whenever it forms a unique combination. Unfortunately, since a set object only accepts immutable objects, I have to convert `choices` to a string object, which causes checking the uniqueness of a combination to be an $O(n)$ operation.
+In my solution, I use list `choices` to trace chosen denominations, and I will add this list to set `uchoices` whenever it forms a unique combination. Unfortunately, since a set object only accepts immutable objects, I have to convert `choices` to a string object, which causes checking the uniqueness of a combination to be an $O(n)$ operation.
 
 ```python
 class Solution(object):    
