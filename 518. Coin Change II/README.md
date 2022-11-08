@@ -4,7 +4,7 @@
 https://leetcode.com/problems/coin-change-ii/
 
 ## Recursive Solution:
-Our intuition leads us to devise a simple solution, i.e., tracing every permutation and determining whether or not this permutation forms a unique combination.
+Our intuition leads us to devise a simple solution, i.e., tracing every permutation and determining whether or not a permutation forms a unique combination. Lastly, count the number of unique combinations, and we're done.
 
 ---
 
@@ -72,3 +72,5 @@ T(n) &= m(n-1)+O(1)\\
 \end{aligned}
 ```
 Thus, the computation shows that the runtime of my recursive solution is $O(nm^n)$, which is really bad.
+
+## Dynamic Programming Solution
