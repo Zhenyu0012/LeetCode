@@ -71,6 +71,6 @@ T(n) &= m(n-1)+O(1)\\
 &=O(nm^n)
 \end{aligned}
 ```
-Thus, the computation shows that the runtime of my recursive solution is $O(nm^n)$, which is really bad.
+Thus, the computation shows the runtime of my recursive solution is $O(nm^n)$, which is really bad.
 
 ## Dynamic Programming Solution
