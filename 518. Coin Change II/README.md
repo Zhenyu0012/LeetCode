@@ -4,7 +4,7 @@
 https://leetcode.com/problems/coin-change-ii/
 
 ## Recursive Solution:
-Our intuition leads us to devise a simple solution, i.e., tracing every permutation and determining whether or not a permutation forms a unique combination. Lastly, count the number of unique combinations, and we're done.
+Our intuition leads us to devise a simple solution, i.e., tracing every permutation and determining whether or not a permutation forms a unique combination. Count the number of unique combinations, and we're done.
 
 ---
 
