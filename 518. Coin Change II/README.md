@@ -26,14 +26,15 @@ $$
 
 <p align="center"> IMPLEMENTATION </p>
 
-In my solution, I use list `choices` to trace chosen denominations, and I will add this list to set `uchoices` whenever it forms a unique combination. Unfortunately, since a set object only accepts immutable objects, I have to convert `choices` to a string object, which causes a check for a unique combination to be an $O(n)$ operation.
+To avoid future confusion, I add two variables, `choices` and `uchoices`, in my implementation. `choices` is a list that aims to trace chosen denominations, and `uchoices` is a set that helps to check the uniquenesses of combinations. I will add `choices` to `uchoices` whenever selected denominations form a distinctive combination. Unfortunately, since set objects only accept immutable objects, I have to convert `choices` to a string object, which causes a check for a unique combination to be an $O(n)$ operation.
 
 ```python
 class Solution(object):    
     def change(self, amount, coins):
         
         uchoices = set()
-        choices = [0] * len(coins)
+        size = len(coins)
+        choices = [0] * size
         
         def change_helper(amount, coins):            
             if amount < 0:
@@ -46,7 +47,7 @@ class Solution(object):
                 return 0
 
             ct = 0
-            for i in range(len(coins)):
+            for i in range(size):
                 choices[i] += 1
                 ct += change_helper(amount-coins[i], coins)
                 choices[i] -= 1
